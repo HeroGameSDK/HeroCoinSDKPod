@@ -14,6 +14,9 @@
 		C43C95F123CDCACF0042C3B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C43C95F023CDCACF0042C3B3 /* Assets.xcassets */; };
 		C43C95F423CDCACF0042C3B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C43C95F223CDCACF0042C3B3 /* LaunchScreen.storyboard */; };
 		C43C95F723CDCACF0042C3B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C43C95F623CDCACF0042C3B3 /* main.m */; };
+		C43C960023CDCB6B0042C3B3 /* HeroCoinSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43C95FF23CDCB6B0042C3B3 /* HeroCoinSDK.framework */; };
+		C43C960223CDCB7C0042C3B3 /* HeroCoinResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C43C960123CDCB7C0042C3B3 /* HeroCoinResources.bundle */; };
+		C43C960623CDCBB00042C3B3 /* HeroCoinSDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C43C960523CDCBB00042C3B3 /* HeroCoinSDK.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		C43C95F323CDCACF0042C3B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C43C95F523CDCACF0042C3B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C43C95F623CDCACF0042C3B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C43C95FF23CDCB6B0042C3B3 /* HeroCoinSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HeroCoinSDK.framework; sourceTree = "<group>"; };
+		C43C960123CDCB7C0042C3B3 /* HeroCoinResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HeroCoinResources.bundle; sourceTree = "<group>"; };
+		C43C960523CDCBB00042C3B3 /* HeroCoinSDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HeroCoinSDK.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C43C960023CDCB6B0042C3B3 /* HeroCoinSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +52,9 @@
 		C43C95D823CDCACE0042C3B3 = {
 			isa = PBXGroup;
 			children = (
+				C43C960523CDCBB00042C3B3 /* HeroCoinSDK.podspec */,
+				C43C95FE23CDCB560042C3B3 /* Assets */,
+				C43C95FD23CDCB200042C3B3 /* Classes */,
 				C43C95E323CDCACE0042C3B3 /* HeroCoinSDKPod */,
 				C43C95E223CDCACE0042C3B3 /* Products */,
 			);
@@ -74,6 +84,22 @@
 				C43C95F623CDCACF0042C3B3 /* main.m */,
 			);
 			path = HeroCoinSDKPod;
+			sourceTree = "<group>";
+		};
+		C43C95FD23CDCB200042C3B3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C43C95FF23CDCB6B0042C3B3 /* HeroCoinSDK.framework */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C43C95FE23CDCB560042C3B3 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C43C960123CDCB7C0042C3B3 /* HeroCoinResources.bundle */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +161,8 @@
 			files = (
 				C43C95F423CDCACF0042C3B3 /* LaunchScreen.storyboard in Resources */,
 				C43C95F123CDCACF0042C3B3 /* Assets.xcassets in Resources */,
+				C43C960623CDCBB00042C3B3 /* HeroCoinSDK.podspec in Resources */,
+				C43C960223CDCB7C0042C3B3 /* HeroCoinResources.bundle in Resources */,
 				C43C95EF23CDCACE0042C3B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +319,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3BCAF5M7TY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Classes",
+				);
 				INFOPLIST_FILE = HeroCoinSDKPod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +341,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3BCAF5M7TY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Classes",
+				);
 				INFOPLIST_FILE = HeroCoinSDKPod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
