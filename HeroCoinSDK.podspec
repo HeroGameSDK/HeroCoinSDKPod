@@ -35,6 +35,21 @@ Pod::Spec.new do |spec|
 
    spec.requires_arc = true
 
-   #spec.dependency "JSONKit", "~> 1.4"
+    spec.dependency "AFNetworking"
+    spec.dependency "Masonry"
+    spec.dependency "FBSDKLoginKit"
+    spec.dependency "FBSDKShareKit"
+    spec.dependency "JGProgressHUD"
+    spec.dependency "MJRefresh"
+    spec.dependency "YYModel"
+    spec.dependency "Toast", "~> 4.0.0"
+    spec.dependency "YYImage"
+    spec.dependency "AppsFlyerFramework"
+    spec.dependency "Firebase/Analytics"
+    spec.dependency "Firebase/Messaging"
+    spec.dependency "Firebase/DynamicLinks"
+    spec.dependency "LineSDK"
+    spec.dependency "TwitterKit"
+    spec.dependency "WebViewJavascriptBridge"
 
 end
